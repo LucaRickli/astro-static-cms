@@ -1,0 +1,20 @@
+---
+import "@staticcms/core/dist/main.css";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Content Manager</title>
+    <meta
+      name="description"
+      content="Admin dashboard for managing website content"
+    />
+    <script>
+      import CMS from "@staticcms/core";
+      import config from "virtual:static-cms";
+      CMS.init({ config });
+    </script>
+  </head>
+  <body></body>
+</html>
