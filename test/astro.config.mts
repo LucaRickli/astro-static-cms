@@ -12,6 +12,10 @@ export default defineConfig({
     sitemap(),
     StaticCms({
       config: {
+        editor: {
+          frame: false,
+          size: "half",
+        },
         backend: {
           name: "test-repo",
         },
@@ -38,8 +42,8 @@ export default defineConfig({
               {
                 name: "pubDate",
                 widget: "datetime",
-                format: "DD MMM YYYY",
-                date_format: "DD MMM YYYY",
+                format: "MMM dd yyyy",
+                date_format: "MMM dd yyyy",
                 time_format: false,
                 label: "Publish Date",
               },
