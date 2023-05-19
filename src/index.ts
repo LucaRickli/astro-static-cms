@@ -50,7 +50,7 @@ export const StaticCms = ({
 
         injectRoute({
           pattern: adminPath,
-          entryPoint: "astro-static-cms/admin.astro",
+          entryPoint: "../admin.astro",
         });
       },
 

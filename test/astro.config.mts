@@ -12,10 +12,6 @@ export default defineConfig({
     sitemap(),
     StaticCms({
       config: {
-        editor: {
-          frame: false,
-          size: "half",
-        },
         backend: {
           name: "test-repo",
         },
@@ -27,7 +23,6 @@ export default defineConfig({
             folder: "src/content/blog",
             create: true,
             delete: true,
-            // preview_path: "/blog/{{slug}}",
             fields: [
               {
                 name: "title",
